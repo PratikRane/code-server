@@ -12,9 +12,9 @@ services:
 #      - SUDO_PASSWORD=password #optional
 #      - SUDO_PASSWORD_HASH= #optional
 #      - PROXY_DOMAIN=code-server.services.dystrophy.homelab.local
-      - DEFAULT_WORKSPACE=/config/workspace
+      - DEFAULT_WORKSPACE=/mnt/w/code-server/workspace
     volumes:
-      - /mnt/w/code-server:/config
+      - /root/code-server/config:/config
     ports:
       - 8443:8443
     restart: unless-stopped
