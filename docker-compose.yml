@@ -14,7 +14,7 @@ services:
 #      - PROXY_DOMAIN=code-server.services.dystrophy.homelab.local
       - DEFAULT_WORKSPACE=/config/workspace
     volumes:
-      - /root/code-server/config:/config
+      - /mnt/w/code-server:/config
     ports:
       - 8443:8443
     restart: unless-stopped
